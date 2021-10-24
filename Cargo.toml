@@ -6,7 +6,10 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-sqlx = { version = "0.5", features = [ "runtime-tokio-rustls","sqlite" ] }
+chrono = "0.4"
+sqlx = { version = "0.5", features = [ "runtime-tokio-rustls","sqlite" ,"chrono" ] }
 clap = "3.0.0-beta.2"
 anyhow = "1.0"
 tokio = { version = "1", features = ["full"] }
+dotenv = "0.15"
+blake3 ="1.0"
